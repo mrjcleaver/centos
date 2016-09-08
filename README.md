@@ -37,14 +37,14 @@ You tell `packer` to use a specific user variable file via the `-var-file=` comm
 option.  This will override the default options on the core `centos.json` packer template,
 which builds CentOS 6.7 by default.
 
-For example, to build CentOS 7.1, use the following:
+For example, to build CentOS 7.2, use the following:
 
-    $ packer build -var-file=centos71.json centos.json
+    $ packer build -var-file=centos72.json centos.json
 
 If you want to make boxes for a specific desktop virtualization platform, use the `-only`
-parameter.  For example, to build CentOS 7.1 for VirtualBox:
+parameter.  For example, to build CentOS 7.2 for VirtualBox:
 
-    $ packer build -only=virtualbox-iso -var-file=centos71.json centos.json
+    $ packer build -only=virtualbox-iso -var-file=centos72.json centos.json
 
 The boxcutter templates currently support the following desktop virtualization strings:
 
